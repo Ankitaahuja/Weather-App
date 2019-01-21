@@ -1,3 +1,11 @@
+
+# Weather-App
+This app helps to find out temperature and other weather conditions(like wind speed, humidity, conditions) by giving the location inputs including city and country. Used API from free open weather source to fetch the current weather data. 
+
+## Preview
+
+![ScreenShot](https://raw.github.com/ankitaahuja/weather-app/master/public/ScreenShot1.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
