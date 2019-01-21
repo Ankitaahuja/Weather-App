@@ -11,6 +11,8 @@ import React from "react";
     {this.props.humidity &&  <p>Current Humidity: {this.props.humidity}</p> }
     {this.props.description && <p>Current Condition: {this.props.description}</p> }
     {this.props.wind &&  <p>Current Wind Speed: {this.props.wind}</p> }
+    {this.props.error &&  <p> {this.props.error}</p> }
+      
       </div>
     )
   }

@@ -18,7 +18,7 @@ const API_KEY = "b167bd2b87155a047f36518feb8b2d76"
      humidity: undefined,
      description: undefined,
      wind: undefined,
-     error: undefined
+     error: ""
   }
 }
 
@@ -29,6 +29,7 @@ const API_KEY = "b167bd2b87155a047f36518feb8b2d76"
      
      const api_call = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=metric`);
      const data = await api_call.json();
+     if (city && country){
      console.log(data)
      this.setState({
        temperature: data.main.temp,
@@ -38,8 +39,18 @@ const API_KEY = "b167bd2b87155a047f36518feb8b2d76"
      wind: data.wind.speed,
      description: data.weather[0].description,
      error:""
-
      });
+    }else{
+      this.setState({
+        temperature: undefined,
+        city: undefined,
+      country: undefined,
+      humidity: undefined,
+      wind: undefined,
+      description: undefined,
+      error: "Please enter the valid values"
+      });
+    }
    }
   render() {
     return (
