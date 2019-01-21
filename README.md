@@ -4,7 +4,12 @@ This app helps to find out temperature and other weather conditions(like wind sp
 
 ## Preview
 
+<<<<<<< HEAD
 ![ScreenShot](https://raw.github.com/ankitaahuja/weather-app/master/public/ScreenShot1.png)
+=======
+![ScreenShot]
+(https://raw.github.com/ankitaahuja/weather-app/master/public/ScreenShot1.png)
+>>>>>>> 94762415722845fb0ac7e73a2ac381236439f8f7
 (https://raw.github.com/ankitaahuja/weather-app/master/public/ScreenShot2.png)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
