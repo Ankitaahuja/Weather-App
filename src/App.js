@@ -58,20 +58,33 @@ const API_KEY = "b167bd2b87155a047f36518feb8b2d76"
 
       
       <div>
-        <Titles /> 
-        <Forms getWeather={this.getWeather}/>
-        <Weather 
-        temperature = {this.state.temperature}
-        city = {this.state.city}
-        country = {this.state.country}
-        humidity = {this.state.humidity}
-        wind = {this.state.wind}
-        description = {this.state.description}
-        error= {this.state.error}
-
-        />
+       <div className="wrapper">
+         <div className="main">
+           <div className="container">
+             <div className="row"></div>
+             <div className="col-xs-5 title-container">
+             <Titles />
+             </div>
+             <div className="col-xs-7 form-container">
+             <Forms getWeather={this.getWeather}/>
+<Weather 
+temperature = {this.state.temperature}
+city = {this.state.city}
+country = {this.state.country}
+humidity = {this.state.humidity}
+wind = {this.state.wind}
+description = {this.state.description}
+error= {this.state.error}
+/>
+             </div>
+           </div>
+         </div>
+       </div>
+      
       </div>
     )
   }
 }
 export default App;
+
+
