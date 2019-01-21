@@ -54,6 +54,9 @@ const API_KEY = "b167bd2b87155a047f36518feb8b2d76"
    }
   render() {
     return (
+
+
+      
       <div>
         <Titles /> 
         <Forms getWeather={this.getWeather}/>
